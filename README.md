@@ -5,7 +5,7 @@ Navnet Cutis stammer fra latin og betyr «hud», det ytterste laget som beskytte
 
 ## Linker
 [Brandpad](https://brandpad.io/norsk-helsenett/)
-[Slack]([https://brandpad.io/norsk-helsenett/](https://norskhelsenett.slack.com/archives/C0AU27ZSD6X))
+[Slack](https://norskhelsenett.slack.com/archives/C0AU27ZSD6X)
 
 
 
