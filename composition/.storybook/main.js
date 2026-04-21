@@ -1,5 +1,3 @@
-
-
 /** @type { import('@storybook/react-vite').StorybookConfig } */
 const config = {
     stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
@@ -21,7 +19,7 @@ const config = {
         },
         react: {
             title: "React",
-            url: "http://localhost:6006/react",
+            url: "http://localhost:7007",
         },
         vue: {
             title: "vue",
