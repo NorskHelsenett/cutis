@@ -1,5 +1,3 @@
-import React from 'react';
-
 import './input.css';
 
 export interface InputProps {
@@ -28,14 +26,6 @@ export const Input = ({
 }: InputProps) => {
   const mode = primary ? 'storybook-input--primary' : 'storybook-input--secondary';
   return (
-    // <button
-    //   type="button"
-    //   className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-    //   style={{ backgroundColor }}
-    //   {...props}
-    // >
-    //   {label}
-    // </button>
     <input 
       placeholder='Cutis :D'
       className={['storybook-input', `storybook-input--${backgroundColor}`, `storybook-input--${fontColor}`, mode].join(' ')}
