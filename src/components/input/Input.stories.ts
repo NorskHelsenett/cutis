@@ -1,3 +1,8 @@
+/**
+ * @file Storybook stories for the Input component.
+ *
+ * Defines the default metadata and primary example state for the input.
+ */
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { fn } from 'storybook/test';

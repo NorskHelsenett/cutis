@@ -1,3 +1,8 @@
+/**
+ * @file Storybook stories for the Header component.
+ *
+ * Defines the logged-in and logged-out variants used in Storybook examples.
+ */
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { fn } from 'storybook/test';

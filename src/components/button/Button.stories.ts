@@ -1,3 +1,9 @@
+/**
+ * @file Storybook stories for the Button component.
+ *
+ * Defines the default documentation metadata and example states for the button.
+ */
+
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { fn } from 'storybook/test';

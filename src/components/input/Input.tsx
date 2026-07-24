@@ -1,4 +1,8 @@
-import React from 'react';
+/**
+ * @file Reusable input component for the Cutis design system.
+ *
+ * Provides a styled text input with configurable color and size variants.
+ */
 
 import './input.css';
 
