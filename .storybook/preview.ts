@@ -1,3 +1,9 @@
+/**
+ * @file Global Storybook preview configuration.
+ *
+ * Sets the shared parameters and accessibility defaults for all stories.
+ */
+
 import type { Preview } from '@storybook/react-vite'
 
 const preview: Preview = {

@@ -1,0 +1,79 @@
+<!-- Default meta title -->
+<title>Storybook - Cutis</title>
+<meta name="title" content="Storybook - Cutis" />
+
+<style>
+  /* Tilpasser høyden på Storybook til å gi plass til header*/
+  #root > * {
+    height: calc(100dvh - 60px) !important;
+  }
+
+  #header {
+    height: 60px;
+    width: 100%;
+    background-color: #BD4B64; /* pink 600 */
+  }
+
+  .navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-right: 16px;
+  }
+
+  .logo-wrapper {
+    display: flex;
+    padding: 0px 28px;
+  }
+
+  ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    display: inline;
+    box-decoration-break: clone;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    text-align: left;
+    color: #FFF3F5; /* pink 50 */
+    border: 2px solid transparent;
+    text-decoration: underline;
+    text-underline-offset: 0.16rem;
+    text-decoration-color: #FFD4DE; /* pink 200 */
+    text-decoration-thickness: 1px;
+    padding: 0.1rem;
+  }
+
+  a:hover {
+    cursor: pointer;
+    background-color: black; /* TODO: blueberry 700 */
+  }
+
+  img { /* MIDLERTIDIG: Logoen skal erstattes med SVG */
+    width: 300px;
+  }
+
+</style>
+
+<header id="header">
+  <nav class="navbar">
+    <div class="logo-wrapper">
+      <img src="./public/NHN_Logo_hvit.svg">
+      <!-- <span class="logo-text">Cutis</span> -->
+      <!-- TODO: Eksportere Cutis logo som SVG og inserte her istedenfor ren tekst -->
+    </div>
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Fullstendig dokumentasjon</a></li>
+    </ul>
+  </nav>
+</header>
