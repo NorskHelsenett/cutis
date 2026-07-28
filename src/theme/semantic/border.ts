@@ -8,3 +8,7 @@
  *
  * @see ../primitive/border.ts
  */
+
+import * as primitive from '../primitive/border';
+
+export const radius = primitive.radius;

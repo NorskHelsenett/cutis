@@ -8,3 +8,5 @@
  *
  * @see https://brandpad.io/norsk-helsenett/
  */
+
+export const radius = 200;
