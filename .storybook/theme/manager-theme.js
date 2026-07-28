@@ -14,25 +14,25 @@ export default create({
   base: 'light', // 'light' or 'dark' — the baseline Storybook theme to extend
 
   // Brandings
-  brandTitle: brand.title,
-  brandUrl: brand.url,
-  brandImage: brand.image,
-  brandTarget: '_self',
+    brandTitle: brand.title,
+    brandUrl: brand.url,
+//  brandImage: brand.image,
+    brandTarget: '_self',
 
   // Typography
   fontBase: typography.fontBase,
   fontCode: typography.fontCode,
 
   // Core UI colors
-  colorPrimary: colors.pink600,  // Main brand color — focus rings, active states
-  colorSecondary: colors.pink400,     // Bold pink — links, secondary highlights
+  colorPrimary: colors.lightGreenPrimary,    // Main brand color — focus rings, active states
+  colorSecondary: colors.darkGreenPrimary,   // Links, secondary highlights
 
   // App chrome backgrounds
   appBg: colors.warmGray,             // Outer app background — soft off-white
   appContentBg: colors.white,         // Canvas/preview area — clean white
   appPreviewBg: colors.white,         // Background behind the story preview itself
   appBorderColor: colors.gray3,       // Subtle border color throughout the UI
-  appBorderRadius: 4,
+  appBorderRadius: 200,
 
   // Text colors
   textColor: colors.black,            // Primary text
@@ -42,11 +42,11 @@ export default create({
   // barTextColor / barSelectedColor / barHoverColor / textMutedColor intentionally
   // left unset — Storybook's defaults are designed for a light bar background
   // and read correctly against brandLight without any overrides.
-  barBg: colors.pink50,        // Header background — light brand pink
+  barBg: colors.green4_2,               // Header background
 
   // Form elements (search input, addon panels)
   inputBg: colors.white,
   inputBorder: colors.gray3,
   inputTextColor: colors.black,
-  inputBorderRadius: 4,
+  inputBorderRadius: 200,
 });

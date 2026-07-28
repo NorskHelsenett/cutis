@@ -7,41 +7,40 @@
  */
 
 export const colors = {
-  // Brand colors (primary palette)
-  brandPrimary: '#B1531A',    // Burnt orange — main brand color
-  brandSecondary: '#F4973F',  // Warm orange — accent/highlight
-  brandTertiary: '#FFBDC5',   // Soft pink — accent surfaces
-  brandLight: '#FFF7F8',      // Near-white pink — subtle backgrounds
+    cutisDark:         '#C77B85',
+    cutis:             '#FFBBC4',
+    cutisLight:        '#FFE3E7',
+    cutisExtraLight:   '#FFE3E7',
 
-  // Orange tones
-  orange900: '#4D240B',  // Deep brown-orange — darkest, for high-contrast text/icons
-  orange600: '#B1531A',  // Base orange — same as brandPrimary
-  orange400: '#F4973F',  // Mid orange — same as brandSecondary
-  orange200: '#FDC087',  // Light orange — hover/highlight states
-  orange50: '#FFF1E4',   // Faint orange — tinted backgrounds
+    // TODO: update these brandpad colors to the color variables from the design tokens once they're implemented
+    skin1:             '#3D1A13',
+    skin2:             '#723E33',
+    skin3:             '#B86853',
+    skin4:             '#E09D7B',
+    skin5:             '#FBD9A5',
+    skin6:             '#F7C9BE',
 
-  // Pink tones
-  pink900: '#41040E',  // Deep maroon-pink — darkest, for high-contrast text/icons
-  pink600: '#BD4B64',  // Base pink — bold surfaces (e.g. header bar)
-  pink400: '#FF93AA',  // Mid pink — accents, active states
-  pink200: '#FFD4DE',  // Light pink — hover/highlight states
-  pink50: '#FFF3F5',   // Faint pink — tinted backgrounds
+    green1_1:          '#002920',
+    darkGreenPrimary:  '#015945',
+    lightGreenPrimary: '#7BEFB2',
+    green4_2:          '#D3F5E3',
 
-  // Grayscale
-  black: '#000000',
-  gray1: '#808285',      // Mid gray — secondary text/icons
-  gray3: '#DCDDDE',      // Light gray — borders
-  warmGray: '#F7F5F4',   // Off-white — app background
-  white: '#FFFFFF',
+    black:             '#000000',
+    gray1:             '#808285', // Mid gray — secondary text/icons
+    gray2:             '#BCBEC0',
+    gray3:             '#DCDDDE', // Light gray — borders
+    gray4:             '#F1F2F2',
+    warmGray:          '#F7F5F4', // Off-white — app background
+    white:             '#FFFFFF'
 };
 
 export const typography = {
-  fontBase: '"Helvetica Now", Arial, sans-serif',
+  fontBase: 'Inter, Arial, sans-serif',
   fontCode: 'monospace',
 };
 
 export const brand = {
-  title: 'Cutis',                                      // Text shown next to/instead of logo (e.g. "My Design System")
-  url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',  // Where clicking the logo/title navigates to
-  image: '/public/Cutis_logo.svg'
-}
+  title: 'Components',                                      // Text shown next to/instead of logo (e.g. "My Design System")
+//  url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',  // Where clicking the logo/title navigates to
+//  image: '/public/CutisHang.svg'
+};
