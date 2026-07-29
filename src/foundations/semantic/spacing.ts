@@ -12,7 +12,6 @@
 import * as primitive from '../primitive/spacing';
 
 export const spacing = {
-    spacing_00: primitive.spacing.spacing_00,
     spacing_01: primitive.spacing.spacing_01,
     spacing_02: primitive.spacing.spacing_02,
     spacing_03: primitive.spacing.spacing_03,

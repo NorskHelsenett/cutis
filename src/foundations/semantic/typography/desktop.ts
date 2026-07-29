@@ -21,8 +21,8 @@ import * as defaults  from '../../primitive/typography/defaults'
  * Used once per page as the main heading
  */
 export const heading_xl = {
-    fontSize:   primitive.fontSize.heading_xl,
-    lineHeight: primitive.lineHeight.heading_xl,
+    fontSize:   primitive.fontSize.heading_xl.rem,
+    lineHeight: primitive.lineHeight.heading_xl.rem,
     fontFamily: defaults.fontFamily.default,
     fontWeight: defaults.fontWeight.bold,
 };
@@ -31,8 +31,8 @@ export const heading_xl = {
  * Used for section headings
  */
 export const heading_l = {
-    fontSize:   primitive.fontSize.heading_l,
-    lineHeight: primitive.lineHeight.heading_l,
+    fontSize:   primitive.fontSize.heading_l.rem,
+    lineHeight: primitive.lineHeight.heading_l.rem,
     fontFamily: defaults.fontFamily.default,
     fontWeight: defaults.fontWeight.bold,
 };
@@ -41,8 +41,8 @@ export const heading_l = {
  * Used for subsections and short titles
  */
 export const heading_m = {
-    fontSize:   primitive.fontSize.heading_m,
-    lineHeight: primitive.lineHeight.heading_m,
+    fontSize:   primitive.fontSize.heading_m.rem,
+    lineHeight: primitive.lineHeight.heading_m.rem,
     fontFamily: defaults.fontFamily.default,
     fontWeight: defaults.fontWeight.bold,
 };
@@ -51,8 +51,8 @@ export const heading_m = {
  * Used for smaller sections or panel headings
  */
 export const heading_s = {
-    fontSize:   primitive.fontSize.heading_s,
-    lineHeight: primitive.lineHeight.heading_s,
+    fontSize:   primitive.fontSize.heading_s.rem,
+    lineHeight: primitive.lineHeight.heading_s.rem,
     fontFamily: defaults.fontFamily.default,
     fontWeight: defaults.fontWeight.bold,
 };
@@ -61,8 +61,8 @@ export const heading_s = {
  * Introductory text or longer descriptions
  */
 export const body_l = {
-    fontSize:   primitive.fontSize.body_l,
-    lineHeight: primitive.lineHeight.body_l,
+    fontSize:   primitive.fontSize.body_l.rem,
+    lineHeight: primitive.lineHeight.body_l.rem,
     fontFamily: defaults.fontFamily.default,
     fontWeight: defaults.fontWeight.regular,
 };
@@ -71,8 +71,8 @@ export const body_l = {
  * Default body text in the interface
  */
 export const body_m = {
-    fontSize:   primitive.fontSize.body_m,
-    lineHeight: primitive.lineHeight.body_m,
+    fontSize:   primitive.fontSize.body_m.rem,
+    lineHeight: primitive.lineHeight.body_m.rem,
     fontFamily: defaults.fontFamily.default,
     fontWeight: defaults.fontWeight.regular,
 };
@@ -81,8 +81,8 @@ export const body_m = {
  * Help texts and secondary information
  */
 export const body_s = {
-    fontSize:   primitive.fontSize.body_s,
-    lineHeight: primitive.lineHeight.body_s,
+    fontSize:   primitive.fontSize.body_s.rem,
+    lineHeight: primitive.lineHeight.body_s.rem,
     fontFamily: defaults.fontFamily.default,
     fontWeight: defaults.fontWeight.regular,
 };
@@ -91,8 +91,8 @@ export const body_s = {
  * Metadata, captions, and other low-priority information
  */
 export const caption = {
-    fontSize:   primitive.fontSize.caption,
-    lineHeight: primitive.lineHeight.caption,
+    fontSize:   primitive.fontSize.caption.rem,
+    lineHeight: primitive.lineHeight.caption.rem,
     fontFamily: defaults.fontFamily.default,
     fontWeight: defaults.fontWeight.regular,
 };
@@ -101,8 +101,8 @@ export const caption = {
  * Form fields, buttons, and labels
  */
 export const label = {
-    fontSize:   primitive.fontSize.label,
-    lineHeight: primitive.lineHeight.label,
+    fontSize:   primitive.fontSize.label.rem,
+    lineHeight: primitive.lineHeight.label.rem,
     fontFamily: defaults.fontFamily.default,
     fontWeight: defaults.fontWeight.medium,
 };

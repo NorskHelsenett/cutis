@@ -59,9 +59,9 @@ export const interactive = {
 };
 
 /**
- * User interaction colors
+ * Status colors
  */
-export const UI = {
+export const status = {
     warning: primitive.extended.yellow,
     success: primitive.extended.green,
     error:   primitive.extended.red,
