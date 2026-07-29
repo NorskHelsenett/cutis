@@ -1,7 +1,16 @@
 /**
  * Spacing accessor functions.
  *
- * Provides a controlled way for components to consume spacing tokens
- * defined in `spacers.ts`, mapping semantic size names (e.g. 'xs', 'm', 'xl')
- * to their corresponding spacing values.
+ * Provides a way for components to consume spacing tokens defined in
+ * `semantic/spacing.ts` as usable CSS values, in either px or rem.
  */
+
+import { spacing } from '../semantic/spacing';
+
+type SpacingToken = keyof typeof spacing;
+type SpacingUnit = 'px' | 'rem';
+
+export const getSpacing = (token: SpacingToken, unit: SpacingUnit = 'rem'): string => {
+    const value = spacing[token][unit];
+    return `${value}${unit}`;
+};
