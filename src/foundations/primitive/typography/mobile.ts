@@ -11,25 +11,26 @@
  */
 
 export const fontSize = {
-    heading_xl: 28,
-    heading_l:  24,
-    heading_m:  20,
-    heading_s:  18,
-    body_l:     18,
-    body_m:     16,
-    body_s:     14,
-    caption:    14,
-    label:      16,
+    heading_xl: { px: 28, rem: 1.75 },
+    heading_l:  { px: 24, rem: 1.5 },
+    heading_m:  { px: 20, rem: 1.25 },
+    heading_s:  { px: 18, rem: 1.125 },
+    body_l:     { px: 18, rem: 1.125 },
+    body_m:     { px: 16, rem: 1 },
+    body_s:     { px: 14, rem: 1 },
+    caption:    { px: 14, rem: 0.875 },
+    label:      { px: 16, rem: 0.875 }
 };
 
+/* TODO: ALTER REM VALUES */
 export const lineHeight = {
-    heading_xl: 36,
-    heading_l:  32,
-    heading_m:  28,
-    heading_s:  24,
-    body_l:     28,
-    body_m:     24,
-    body_s:     20,
-    caption:    20,
-    label:      24,
+    heading_xl: { px: 36, rem: 1 },
+    heading_l:  { px: 32, rem: 1 },
+    heading_m:  { px: 28, rem: 1 },
+    heading_s:  { px: 24, rem: 1 },
+    body_l:     { px: 28, rem: 1 },
+    body_m:     { px: 24, rem: 1 },
+    body_s:     { px: 20, rem: 1 },
+    caption:    { px: 20, rem: 1 },
+    label:      { px: 24, rem: 1 },
 };

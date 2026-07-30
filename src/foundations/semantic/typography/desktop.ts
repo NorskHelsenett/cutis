@@ -104,7 +104,7 @@ export const label = {
     fontSize:   primitive.fontSize.label.rem,
     lineHeight: primitive.lineHeight.label.rem,
     fontFamily: defaults.fontFamily.default,
-    fontWeight: defaults.fontWeight.medium,
+    fontWeight: defaults.fontWeight.regular,
 };
 
 
