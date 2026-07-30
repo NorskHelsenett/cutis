@@ -5,9 +5,11 @@
  */
 
 import type { Preview } from '@storybook/react-vite'
+import managerTheme from './theme/manager-theme';
 
 const preview: Preview = {
   parameters: {
+    docs: { theme: managerTheme },
     controls: {
       matchers: {
        color: /(background|color)$/i,

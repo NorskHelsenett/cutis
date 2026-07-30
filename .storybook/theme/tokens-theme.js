@@ -20,9 +20,14 @@ export const colors = {
     skin5:             '#FBD9A5',
     skin6:             '#F7C9BE',
 
-    green1_1:          '#002920',
     darkGreenPrimary:  '#015945',
     lightGreenPrimary: '#7BEFB2',
+    green1_1:          '#002920',
+    green2_1:          '#247360',
+    green3_1:          '#02A67F',
+    green3_2:          '#41BC9F', 
+    green3_3:          '#80D3BF',
+    green3_4:          '#C0E9DF',
     green4_2:          '#D3F5E3',
 
     black:             '#000000',
