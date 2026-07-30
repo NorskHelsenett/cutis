@@ -22,15 +22,14 @@ export const fontSize = {
     label:      { px: 16, rem: 0.875 }
 };
 
-/* TODO: ALTER REM VALUES */
 export const lineHeight = {
-    heading_xl: { px: 36, rem: 1 },
-    heading_l:  { px: 32, rem: 1 },
-    heading_m:  { px: 28, rem: 1 },
-    heading_s:  { px: 24, rem: 1 },
-    body_l:     { px: 28, rem: 1 },
-    body_m:     { px: 24, rem: 1 },
-    body_s:     { px: 20, rem: 1 },
-    caption:    { px: 20, rem: 1 },
-    label:      { px: 24, rem: 1 },
+    heading_xl: { px: 36, rem: 2.25 },
+    heading_l:  { px: 32, rem: 2 },
+    heading_m:  { px: 28, rem: 1.75 },
+    heading_s:  { px: 24, rem: 1.5 },
+    body_l:     { px: 28, rem: 1.75 },
+    body_m:     { px: 24, rem: 1.5 },
+    body_s:     { px: 20, rem: 1.25 },
+    caption:    { px: 20, rem: 1.25 },
+    label:      { px: 24, rem: 1.5 },
 };
