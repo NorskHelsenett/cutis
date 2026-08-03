@@ -10,4 +10,4 @@ export * as colors from "./semantic/palette";
 export * as spacing from "./semantic/spacing";
 export * as border from "./semantic/border";
 export * as typographyDesktop from "./semantic/typography/desktop";
-export * as typographyMobile from "./semantic/typography/desktop";
+export * as typographyMobile from "./semantic/typography/mobile";
