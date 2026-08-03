@@ -4,8 +4,6 @@
  * Renders the main page layout used by the Vite entry point.
  */
 
-import './App.css'
-
 function App() {
 
   return (

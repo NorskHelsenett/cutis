@@ -35,7 +35,6 @@ export const Primary: Story = {
   args: {
     primary: true,
     label: 'Input',
-    backgroundColor: 'red',
-    fontColor: 'white',
+    backgroundColor: 'white',
   },
 };
