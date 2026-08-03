@@ -4,7 +4,7 @@
  * Renders a simple application header with login and sign-up actions.
  */
 
-import { Button } from '../Button/Button';
+import { Button } from '../button/Button';
 import './header.css';
 
 type User = {
