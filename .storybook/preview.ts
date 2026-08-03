@@ -1,7 +1,15 @@
+/**
+ * @file Global Storybook preview configuration.
+ *
+ * Sets the shared parameters and accessibility defaults for all stories.
+ */
+
 import type { Preview } from '@storybook/react-vite'
+import managerTheme from './theme/manager-theme';
 
 const preview: Preview = {
   parameters: {
+    docs: { theme: managerTheme },
     controls: {
       matchers: {
        color: /(background|color)$/i,

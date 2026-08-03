@@ -1,4 +1,8 @@
-import React from 'react';
+/**
+ * @file Reusable button component for the Cutis design system.
+ *
+ * Exposes a simple, Storybook-friendly button with primary and size variants.
+ */
 
 import './button.css';
 

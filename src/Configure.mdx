@@ -1,0 +1,167 @@
+{/*
+ * @file Storybook introduction page for the Cutis component library.
+ *
+ * Provides the landing content and resource links shown in the docs UI.
+ */}
+
+import { Meta } from "@storybook/addon-docs/blocks";
+
+import Logo from "/CutisHang.svg";
+
+export const RightArrow = () => <svg
+    viewBox="0 0 14 14"
+    width="8px"
+    height="14px"
+    style={{
+      marginLeft: '4px',
+      display: 'inline-block',
+      shapeRendering: 'inherit',
+      verticalAlign: 'middle',
+      fill: 'currentColor',
+      'path fill': 'currentColor'
+    }}
+>
+  <path d="m11.1 7.35-5.5 5.5a.5.5 0 0 1-.7-.7L10.04 7 4.9 1.85a.5.5 0 1 1 .7-.7l5.5 5.5c.2.2.2.5 0 .7Z" />
+</svg>
+
+{/* This title controls where the page sits in the sidebar nav */}
+<Meta title="Introduction" />
+
+<div className="sb-container">
+  <div className="sb-section-title">
+    # Cutis - NHNs komponentbibliotek
+
+    {/* TODO: one or two sentences describing what this library is and who it's for. A short description of your component library goes here — what it contains,
+    which product(s) it powers, and who should be using it.*/}
+    <p>Cutis er sommerprosjektet til **Malin Lenz Litlehei** og **Eline Lædre** :D </p>
+  </div>
+
+  <div className="sb-section">
+    <div className="sb-section-item">
+      {/* <img src={GettingStarted} alt="Getting started" /> */}
+      <h4 className="sb-section-item-heading">Kom i gang 🚀</h4>
+      <p className="sb-section-item-paragraph">
+        {/* TODO: replace with install / setup instructions or a link to your docs */}
+        Hvordan installere Cutis og ta det i bruk i ditt prosjekt.
+      </p>
+      <a className="sb-action-link" href="#" target="_blank">
+        Lær mer<RightArrow />
+      </a>
+    </div>
+    <div className="sb-section-item">
+      {/* <img src={Tokens} alt="Design tokens" /> */}
+      <h4 className="sb-section-item-heading">Design tokens 🎨</h4>
+      <p className="sb-section-item-paragraph">
+        {/* TODO: replace with info on colors, spacing, typography, etc. */}
+        Fargepalett, spacing, typografi og andre fundamentale design tokens.
+      </p>
+      <a className="sb-action-link" href="#" target="_blank">
+        Lær mer<RightArrow />
+      </a>
+    </div>
+        <div className="sb-section-item">
+      {/* <img src={Components} alt="Components" /> */}
+      <h4 className="sb-section-item-heading">Tilgjengelighet 🌐</h4>
+      <p className="sb-section-item-paragraph">
+        {/* TODO: replace with a summary of the components available */}
+        Hvordan sikre universell utforming.
+      </p>
+      <a className="sb-action-link" href="#" target="_blank">
+        Lær mer<RightArrow />
+      </a>
+    </div>
+  </div>
+</div>
+
+<div className="sb-container">
+  <div className="sb-section-title">
+    ## Ressurser
+
+    {/* TODO: replace with links relevant to your team — repo, design files, contribution guide, etc. */}
+    Lenker til arbeid tilknyttet Cutis.
+  </div>
+
+  <div className="sb-section">
+    <div className="sb-section-item">
+      <h4 className="sb-section-item-heading">GitHub 🐈‍⬛</h4>
+      <p className="sb-section-item-paragraph">Kildekode, issues og pull requests</p>
+      <a className="sb-action-link" href="https://github.com/NorskHelsenett/cutis" target="_blank">
+        Se repository<RightArrow />
+      </a>
+    </div>
+    <div className="sb-section-item">
+      <h4 className="sb-section-item-heading">Figma 🖌️</h4>
+      <p className="sb-section-item-paragraph">Designfiler og -spesifikasjoner.</p>
+      <a className="sb-action-link" href="https://www.figma.com/files/1063855262218170778/team/1654054070773219245" target="_blank">
+        Åpne Figma<RightArrow />
+      </a>
+    </div>
+    <div className="sb-section-item">
+      <h4 className="sb-section-item-heading">Hvordan bidra 🤝</h4>
+      <p className="sb-section-item-paragraph">Veiledning for endringsforslag og opprettelse av nye komponenter.</p>
+      <a className="sb-action-link" href="#" target="_blank">
+        Les veiledningen<RightArrow />
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+  {`
+  .sb-container {
+    margin-bottom: 48px;
+  }
+
+  .sb-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+  .sb-section-title {
+    margin-bottom: 32px;
+  }
+
+  .sb-section a:not(h1 a, h2 a, h3 a) {
+    font-size: 14px;
+  }
+
+  .sb-section-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sb-section-item-heading {
+    padding-top: 20px !important;
+    padding-bottom: 5px !important;
+    margin: 0 !important;
+  }
+
+  .sb-section-item-paragraph {
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  .sb-action-link {
+    text-decoration: none;
+  }
+
+  .sb-action-link:hover, .sb-action-link:focus {
+    text-decoration: underline;
+    text-decoration-thickness: 0.03125rem;
+    text-underline-offset: 0.11em;
+  }
+
+  @media screen and (max-width: 600px) {
+    .sb-section {
+      flex-direction: column;
+    }
+  }
+  `}
+</style>

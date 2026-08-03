@@ -1,4 +1,8 @@
-import React from 'react';
+/**
+ * @file Header component used in Storybook examples and page compositions.
+ *
+ * Renders a simple application header with login and sign-up actions.
+ */
 
 import { Button } from '../button/Button';
 import './header.css';

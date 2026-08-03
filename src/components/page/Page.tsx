@@ -1,3 +1,8 @@
+/**
+ * @file Page component for Storybook-driven examples.
+ *
+ * Demonstrates a higher-level page composition with header and content sections.
+ */
 import React from 'react';
 
 import { Header } from '../header/Header';
