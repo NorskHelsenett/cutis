@@ -10,7 +10,7 @@ export const colors = {
     cutisDark:         '#C77B85',
     cutis:             '#FFBBC4',
     cutisLight:        '#FFE3E7',
-    cutisExtraLight:   '#FFE3E7',
+    cutisExtraLight:   '#FFF7F8',
 
     // TODO: update these brandpad colors to the color variables from the design tokens once they're implemented
     skin1:             '#3D1A13',
