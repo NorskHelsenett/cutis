@@ -1,0 +1,27 @@
+/**
+ * NHN semantic spacing tokens.
+ *
+ * Maps design intent (e.g. component padding, layout gaps) to primitive
+ * spacing values. Components should reference these tokens rather than
+ * the primitive spacing scale directly, so meaning stays consistent even
+ * if the underlying primitive values change.
+ *
+ * Requires primitive/spacing.css to be loaded first.
+ *
+ * @see ../primitive/spacing.css
+ */
+
+:root {
+  --nhn-spacing-01: var(--nhn-primitive-spacing-01);
+  --nhn-spacing-02: var(--nhn-primitive-spacing-02);
+  --nhn-spacing-03: var(--nhn-primitive-spacing-03);
+  --nhn-spacing-04: var(--nhn-primitive-spacing-04);
+  --nhn-spacing-05: var(--nhn-primitive-spacing-05);
+  --nhn-spacing-06: var(--nhn-primitive-spacing-06);
+  --nhn-spacing-07: var(--nhn-primitive-spacing-07);
+  --nhn-spacing-08: var(--nhn-primitive-spacing-08);
+  --nhn-spacing-09: var(--nhn-primitive-spacing-09);
+  --nhn-spacing-10: var(--nhn-primitive-spacing-10);
+  --nhn-spacing-11: var(--nhn-primitive-spacing-11);
+  --nhn-spacing-12: var(--nhn-primitive-spacing-12);
+}

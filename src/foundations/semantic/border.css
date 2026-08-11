@@ -1,0 +1,16 @@
+/**
+ * NHN semantic border tokens.
+ *
+ * Maps design intent (e.g. default, focus, subtle) to primitive border
+ * values. Components should reference these tokens rather than the
+ * primitive border tokens directly, so meaning stays consistent even if
+ * the underlying primitive values change.
+ *
+ * Requires primitive/border.css to be loaded first.
+ *
+ * @see ../primitive/border.css
+ */
+
+:root {
+  --nhn-radius: var(--nhn-primitive-radius);
+}

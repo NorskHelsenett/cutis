@@ -1,0 +1,46 @@
+/**
+ * NHN semantic color palette.
+ *
+ * Maps design intent (e.g. text, background, border) to primitive
+ * color values. Components should reference these tokens rather than
+ * the primitive palette directly, so meaning stays consistent even if
+ * the underlying primitive values change.
+ *
+ * Requires primitive/palette.css to be loaded first.
+ *
+ * @see ../primitive/palette.css
+ */
+
+:root {
+  /* NHN primary brand colors */
+  --nhn-color-brand-primary:              var(--nhn-primitive-color-primary-dark-green);
+  --nhn-color-brand-secondary:            var(--nhn-primitive-color-primary-light-green);
+
+  /* Background colors */
+  --nhn-color-background-primary:         var(--nhn-primitive-color-white);
+  --nhn-color-background-secondary:       var(--nhn-primitive-color-warm-gray);
+  --nhn-color-background-dark:            var(--nhn-primitive-color-green1-1);
+
+  /* Surface colors */
+  --nhn-color-surface-default:            var(--nhn-primitive-color-warm-gray);
+  --nhn-color-surface-raised:             var(--nhn-primitive-color-primary-light-green);
+
+  /* Text colors */
+  --nhn-color-text-primary:               var(--nhn-primitive-color-black);
+  --nhn-color-text-secondary:             var(--nhn-primitive-color-green2-1);
+  --nhn-color-text-heading-accent:        var(--nhn-primitive-color-green1-1);
+  --nhn-color-text-disabled:              var(--nhn-primitive-color-gray1);
+  --nhn-color-text-inverse:               var(--nhn-primitive-color-green1-4);
+  --nhn-color-text-heading-inverse:       var(--nhn-primitive-color-white);
+
+  /* Interactive colors */
+  --nhn-color-interactive-raised-hover:   var(--nhn-primitive-color-green3-2);
+  --nhn-color-interactive-raised-pressed: var(--nhn-primitive-color-green3-1);
+  --nhn-color-interactive-disabled:       var(--nhn-primitive-color-gray3);
+
+  /* Status colors */
+  --nhn-color-status-warning:             var(--nhn-primitive-color-extended-yellow);
+  --nhn-color-status-success:             var(--nhn-primitive-color-extended-green);
+  --nhn-color-status-error:               var(--nhn-primitive-color-extended-red);
+  --nhn-color-status-info:                var(--nhn-primitive-color-extended-blue);
+}

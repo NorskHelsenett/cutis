@@ -1,0 +1,23 @@
+/**
+ * Public entry point for the theme module.
+ *
+ * Imports all design tokens (palette, spacing, border, typography) so
+ * consumers can import a single file (e.g. `theme/index.css`) instead of
+ * reaching into individual files. Order matters: primitives must load
+ * before the semantic tokens that reference them via var().
+ */
+
+/* Primitive layer — raw values from Brandpad/Figma. Not for direct use in components. */
+@import "./primitive/palette.css";
+@import "./primitive/spacing.css";
+@import "./primitive/border.css";
+@import "./primitive/typography/defaults.css";
+@import "./primitive/typography/desktop.css";
+@import "./primitive/typography/mobile.css";
+
+/* Semantic layer — intent-based tokens. Use these in components. */
+@import "./semantic/palette.css";
+@import "./semantic/spacing.css";
+@import "./semantic/border.css";
+@import "./semantic/typography/mobile.css";
+@import "./semantic/typography/desktop.css";

@@ -1,0 +1,105 @@
+/**
+ * NHN brandpad color palette.
+ *
+ * Raw color tokens transferred directly from the Brandpad/Figma source of truth.
+ * These values should not be edited manually — any changes must originate from
+ * Brandpad and be re-transferred here to stay in sync with the design source.
+ *
+ * Do not reference these variables directly in components — use the semantic
+ * palette (semantic/palette.css) instead, so meaning stays consistent even if
+ * the underlying primitive values change.
+ *
+ * @see https://brandpad.io/norsk-helsenett/
+ */
+
+:root {
+  /* Primary brand colors */
+  --nhn-primitive-color-primary-dark-green:  #015945;
+  --nhn-primitive-color-primary-light-green: #7BEFB2;
+
+  /* Green 1 with variations */
+  --nhn-primitive-color-green1-1: #002920;
+  --nhn-primitive-color-green1-2: #405F58;
+  --nhn-primitive-color-green1-3: #80948F;
+  --nhn-primitive-color-green1-4: #BFC9C7;
+
+  /* Green 2 with variations */
+  --nhn-primitive-color-green2-1: #247360;
+  --nhn-primitive-color-green2-2: #5B9688;
+  --nhn-primitive-color-green2-3: #91B9AF;
+  --nhn-primitive-color-green2-4: #C8DCD7;
+
+  /* Green 3 with variations */
+  --nhn-primitive-color-green3-1: #02A67F;
+  --nhn-primitive-color-green3-2: #41BC9F;
+  --nhn-primitive-color-green3-3: #80D3BF;
+  --nhn-primitive-color-green3-4: #C0E9DF;
+
+  /* Green 4 with variations */
+  --nhn-primitive-color-green4-1: #C4F2DA;
+  --nhn-primitive-color-green4-2: #D3F5E3;
+  --nhn-primitive-color-green4-3: #E1F9ED;
+  --nhn-primitive-color-green4-4: #F0FCF6;
+
+  /* Greyscale */
+  --nhn-primitive-color-black:     #000000;
+  --nhn-primitive-color-gray1:     #808285;
+  --nhn-primitive-color-gray2:     #BCBEC0;
+  --nhn-primitive-color-gray3:     #DCDDDE;
+  --nhn-primitive-color-gray4:     #F1F2F2;
+  --nhn-primitive-color-warm-gray: #F7F5F4;
+  --nhn-primitive-color-white:     #FFFFFF;
+
+  /* Supporting colors - bluescale */
+  --nhn-primitive-color-blue1: #00467A;
+  --nhn-primitive-color-blue2: #40749B;
+  --nhn-primitive-color-blue3: #80A2BC;
+  --nhn-primitive-color-blue4: #BFD1DE;
+
+  /* Supporting colors - purplescale */
+  --nhn-primitive-color-purple1: #372770;
+  --nhn-primitive-color-purple2: #695D94;
+  --nhn-primitive-color-purple3: #9B93B7;
+  --nhn-primitive-color-purple4: #CDC9DB;
+
+  /* Supporting colors - redscale */
+  --nhn-primitive-color-red1: #6B1E27;
+  --nhn-primitive-color-red2: #90565D;
+  --nhn-primitive-color-red3: #B58E93;
+  --nhn-primitive-color-red4: #DAC7C9;
+
+  /* Supporting colors - orangescale */
+  --nhn-primitive-color-orange1: #E85800;
+  --nhn-primitive-color-orange2: #EE8240;
+  --nhn-primitive-color-orange3: #F3AB80;
+  --nhn-primitive-color-orange4: #F9D5BF;
+
+  /* Supporting colors - yellowscale */
+  --nhn-primitive-color-yellow1: #FFC46B;
+  --nhn-primitive-color-yellow2: #FFD390;
+  --nhn-primitive-color-yellow3: #FFE1B5;
+  --nhn-primitive-color-yellow4: #FFF0DA;
+
+  /* Illustration colors */
+  --nhn-primitive-color-skin1: #3D1A13;
+  --nhn-primitive-color-skin2: #723E33;
+  --nhn-primitive-color-skin3: #B86853;
+  --nhn-primitive-color-skin4: #E09D7B;
+  --nhn-primitive-color-skin5: #FBD9A5;
+  --nhn-primitive-color-skin6: #F7C9BE;
+  
+
+  /*--- Not in original brandpad ---*/
+
+  /* Extended colors for UI */
+  --nhn-primitive-color-extended-red:    #C93A36;
+  --nhn-primitive-color-extended-yellow: #F2B24D;
+  --nhn-primitive-color-extended-blue:   #3E79B7;
+  --nhn-primitive-color-extended-green:  #4A9F55;
+
+  /* Cutis visual profile */
+  --nhn-primitive-color-cutis-dark:        #C77B85;
+  --nhn-primitive-color-cutis-regular:     #FFBBC4;
+  --nhn-primitive-color-cutis-light:       #FFE3E7;
+  --nhn-primitive-color-cutis-extra-light: #FFF7F8;
+}
