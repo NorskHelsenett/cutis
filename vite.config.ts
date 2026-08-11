@@ -1,3 +1,9 @@
+/**
+ * @file Vite configuration for the Cutis project.
+ *
+ * Configures the React app, Storybook test integration, and browser-based Vitest setup.
+ */
+
 /// <reference types="vitest/config" />
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';

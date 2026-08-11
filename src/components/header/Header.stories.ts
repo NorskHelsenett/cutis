@@ -1,3 +1,8 @@
+/**
+ * @file Storybook stories for the Header component.
+ *
+ * Defines the logged-in and logged-out variants used in Storybook examples.
+ */
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { fn } from 'storybook/test';
@@ -5,7 +10,7 @@ import { fn } from 'storybook/test';
 import { Header } from './Header';
 
 const meta = {
-  title: 'Example/Header',
+  title: 'Components/Header',
   component: Header,
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ['autodocs'],

@@ -1,3 +1,8 @@
+/**
+ * @file Storybook stories for the Page component.
+ *
+ * Includes a simple interaction test for the login and logout flow.
+ */
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { expect, userEvent, within } from 'storybook/test';
@@ -5,7 +10,7 @@ import { expect, userEvent, within } from 'storybook/test';
 import { Page } from './Page';
 
 const meta = {
-  title: 'Example/Page',
+  title: 'Components/Page',
   component: Page,
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout

@@ -1,0 +1,122 @@
+<!-- Default meta title -->
+<title>Storybook - Cutis</title>
+<meta name="title" content="Storybook - Cutis" />
+
+<style>
+  /* Tilpasser høyden på Storybook til å gi plass til header*/
+  #root > * {
+    height: calc(100dvh - 60px) !important;
+  }
+
+  #header {
+    height: 60px;
+    width: 100%;
+    background-color: #015945; /* NHN Dark Green Primary */
+  }
+
+  .navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-right: 16px;
+  }
+
+  .logo-wrapper {
+    display: flex;
+    padding: 0px 28px;
+  }
+
+  ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    display: inline;
+    box-decoration-break: clone;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    text-align: left;
+    color: white;
+    border: 2px solid transparent;
+    text-decoration: underline;
+    text-underline-offset: 0.16rem;
+    text-decoration-color: white; 
+    text-decoration-thickness: 1px;
+    padding: 0.1rem;
+  }
+
+  a:hover {
+    cursor: pointer;
+  }
+
+  [data-nodetype="document"] svg {
+    color: #247360 !important; /* NHN Green 2_1 */
+  }
+
+  /* Story icon (currently light blue) */
+  [data-nodetype="story"] svg {
+    color: #247360 !important; /* NHN Green 2_1 */
+  }
+
+  /* Sidebar row states */
+  [data-nodetype]:hover:not([data-selected='true']) {
+    background-color: #41BC9F; /* green3_2 — hover */
+  }
+
+  [data-nodetype][data-selected='true'] {
+    background-color: #02A67F; /* green3_1 — pressed/selected, belt-and-suspenders with colorSecondary */
+  }
+
+  [data-nodetype][aria-disabled='true'] {
+    background-color: #DCDDDE; /* gray3 — disabled */
+    cursor: not-allowed;
+  }
+
+  /* Icons turn white on hover or when selected */
+  [data-nodetype]:hover svg,
+  [data-nodetype][data-selected='true'] svg {
+    color: #FFFFFF !important;
+  }
+  /* Row hovered, but three-dot button not itself hovered */
+  [data-nodetype]:hover button:not(:hover) {
+    background-color: transparent !important;
+  }
+
+  [data-nodetype] button,
+  [data-nodetype] button:hover,
+  [data-nodetype] button:focus,
+  [data-nodetype] button:focus-visible {
+    box-shadow: none !important;
+    filter: none !important;
+  }
+
+</style>
+
+<header id="header">
+  <nav class="navbar">
+    <div class="logo-wrapper">
+     <svg width="60" height="35" viewBox="0 0 60 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_121_2)">
+        <path d="M57.4268 2.56194C55.7781 0.921241 53.5425 -0.00043317 51.2115 -0.00043317C48.8805 -0.00043317 46.6449 0.921241 44.9963 2.56194L32.699 14.8075C34.33 13.1507 35.2332 10.9167 35.2098 8.5969C35.1864 6.27712 34.2383 4.0616 32.5743 2.43774C30.9102 0.813872 28.6663 -0.0853206 26.3363 -0.062028C24.0064 -0.0387354 21.7811 0.905134 20.1501 2.56194L2.5732 20.0619C0.924815 21.7042 -0.000792558 23.9312 5.09208e-07 26.253C0.000793576 28.5747 0.927922 30.8011 2.57743 32.4422C4.22694 34.0834 6.4637 35.005 8.79566 35.0042C11.1276 35.0034 13.3638 34.0803 15.0121 32.438L27.3094 20.1925C25.6784 21.8493 24.7753 24.0833 24.7987 26.4031C24.8221 28.7229 25.7701 30.9384 27.4342 32.5622C29.0983 34.1861 31.3421 35.0853 33.6721 35.062C36.0021 35.0387 38.2273 34.0948 39.8583 32.438L57.4268 14.9465C58.244 14.1335 58.8923 13.1683 59.3346 12.1057C59.777 11.0432 60.0046 9.90436 60.0046 8.7542C60.0046 7.60404 59.777 6.46516 59.3346 5.40265C58.8923 4.34015 58.244 3.37485 57.4268 2.56194Z" fill="white"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_121_2">
+          <rect width="60" height="35" fill="white"/>
+        </clipPath>
+      </defs>
+    </svg>
+    </div>
+    <ul> <!-- Link to documentation page in Figma -->
+      <li><a href="https://www.figma.com/design/hVpmLmfSRidIBVUlY5BBf6/4.-Documentation?node-id=2-2&t=IKYug4lQmKd7Qsrg-1">Fullstendig dokumentasjon</a></li>
+    </ul>
+  </nav>
+</header>

@@ -1,3 +1,9 @@
+/**
+ * @file Storybook configuration for the Cutis component library.
+ *
+ * Registers the stories, addons, and framework settings used to run Storybook.
+ */
+
 import type { StorybookConfig } from '@storybook/react-vite';
 
 const config: StorybookConfig = {
