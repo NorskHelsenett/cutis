@@ -1,59 +1,46 @@
-{/*
- * @file Storybook introduction page for the Cutis component library.
- *
- * Provides the landing content and resource links shown in the docs UI.
- */}
-
 import { Meta } from "@storybook/addon-docs/blocks";
 
 import Logo from "/CutisHang.svg";
 
-export const RightArrow = () => <svg
+export const RightArrow = () => (
+  <svg
     viewBox="0 0 14 14"
     width="8px"
     height="14px"
     style={{
-      marginLeft: '4px',
-      display: 'inline-block',
-      shapeRendering: 'inherit',
-      verticalAlign: 'middle',
-      fill: 'currentColor',
-      'path fill': 'currentColor'
+      marginLeft: "4px",
+      display: "inline-block",
+      shapeRendering: "inherit",
+      verticalAlign: "middle",
+      fill: "currentColor",
+      "path fill": "currentColor",
     }}
->
-  <path d="m11.1 7.35-5.5 5.5a.5.5 0 0 1-.7-.7L10.04 7 4.9 1.85a.5.5 0 1 1 .7-.7l5.5 5.5c.2.2.2.5 0 .7Z" />
-</svg>
+  >
+    <path d="m11.1 7.35-5.5 5.5a.5.5 0 0 1-.7-.7L10.04 7 4.9 1.85a.5.5 0 1 1 .7-.7l5.5 5.5c.2.2.2.5 0 .7Z" />
+  </svg>
+);
 
 {/* This title controls where the page sits in the sidebar nav */}
+
 <Meta title="Introduction" />
 
 <div className="sb-container">
-  <div className="sb-section-title">
-    # Cutis - NHNs komponentbibliotek
-
-    {/* TODO: one or two sentences describing what this library is and who it's for. A short description of your component library goes here — what it contains,
-    which product(s) it powers, and who should be using it.*/}
-    <p>Cutis er sommerprosjektet til **Malin Lenz Litlehei** og **Eline Lædre** :D </p>
-  </div>
+  <img src="public/Cutis-pille.png" alt="Cutis pill" width="500" className="pillLogo" />
 
   <div className="sb-section">
     <div className="sb-section-item">
       {/* <img src={GettingStarted} alt="Getting started" /> */}
-      <h4 className="sb-section-item-heading">Kom i gang 🚀</h4>
+      <h4 className="sb-section-item-heading">Velkommen til Cutis!</h4>
       <p className="sb-section-item-paragraph">
-        {/* TODO: replace with install / setup instructions or a link to your docs */}
-        Hvordan installere Cutis og ta det i bruk i ditt prosjekt.
+        Cutis er NHNs bidragsbaserte komponentbibliotek, utviklet som sommerprosjektet til Eline Lædre og Malin Lenz Litlehei.
       </p>
-      <a className="sb-action-link" href="#" target="_blank">
-        Lær mer<RightArrow />
-      </a>
     </div>
     <div className="sb-section-item">
       {/* <img src={Tokens} alt="Design tokens" /> */}
       <h4 className="sb-section-item-heading">Design tokens 🎨</h4>
       <p className="sb-section-item-paragraph">
         {/* TODO: replace with info on colors, spacing, typography, etc. */}
-        Fargepalett, spacing, typografi og andre fundamentale design tokens.
+        Finn ut mer om fargepalett, spacing, typografi og andre fundamentale design tokens.
       </p>
       <a className="sb-action-link" href="#" target="_blank">
         Lær mer<RightArrow />
@@ -64,7 +51,7 @@ export const RightArrow = () => <svg
       <h4 className="sb-section-item-heading">Tilgjengelighet 🌐</h4>
       <p className="sb-section-item-paragraph">
         {/* TODO: replace with a summary of the components available */}
-        Hvordan sikre universell utforming.
+        Finn ut mer om hvordan sikre universell utforming.
       </p>
       <a className="sb-action-link" href="#" target="_blank">
         Lær mer<RightArrow />
@@ -77,8 +64,6 @@ export const RightArrow = () => <svg
   <div className="sb-section-title">
     ## Ressurser
 
-    {/* TODO: replace with links relevant to your team — repo, design files, contribution guide, etc. */}
-    Lenker til arbeid tilknyttet Cutis.
   </div>
 
   <div className="sb-section">
@@ -108,6 +93,17 @@ export const RightArrow = () => <svg
 
 <style>
   {`
+  .pillLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 64px;
+  }
+
+  .sbdocs.sbdocs-wrapper {
+    background-color: #FFF7F8;
+  }
+
   .sb-container {
     margin-bottom: 48px;
   }
@@ -135,6 +131,8 @@ export const RightArrow = () => <svg
     flex: 1;
     display: flex;
     flex-direction: column;
+    background-color: #FFE3E7;
+    padding: 16px 32px;
   }
 
   .sb-section-item-heading {
@@ -150,6 +148,8 @@ export const RightArrow = () => <svg
 
   .sb-action-link {
     text-decoration: none;
+    margin-top: auto;
+    margin-bottom: 0;
   }
 
   .sb-action-link:hover, .sb-action-link:focus {
