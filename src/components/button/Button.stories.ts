@@ -60,3 +60,11 @@ export const Small: Story = {
     label: 'Button',
   },
 };
+
+export const Brand1: Story = {
+  args: {
+    primary: true,
+    color: 'brand1',
+    label: 'Button',
+  },
+};

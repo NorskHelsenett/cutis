@@ -11,6 +11,9 @@ import './button.css';
 
 const sizeMap = { small: 'sm', medium: 'md', large: 'lg' } as const;
 
+/** Farger fra Cutis-temaet (se designsystemet.config.jsonc). */
+export type ButtonColor = 'accent' | 'brand1' | 'brand2' | 'neutral';
+
 export interface ButtonProps {
   /** Is this the principal call to action on the page? */
   primary?: boolean;
@@ -18,6 +21,8 @@ export interface ButtonProps {
   backgroundColor?: string;
   /** How large should the button be? */
   size?: 'small' | 'medium' | 'large';
+  /** Which theme color to use */
+  color?: ButtonColor;
   /** Button contents */
   label: string;
   /** Optional click handler */
@@ -29,6 +34,7 @@ export const Button = ({
   primary = false,
   size = 'medium',
   backgroundColor,
+  color = 'accent',
   label,
   ...props
 }: ButtonProps) => {
@@ -38,7 +44,7 @@ export const Button = ({
       className="cutis-button"
       variant={primary ? 'primary' : 'secondary'}
       data-size={sizeMap[size]}
-      data-color="accent"
+      data-color={color}
       style={backgroundColor ? { backgroundColor } : undefined}
       {...props}
     >

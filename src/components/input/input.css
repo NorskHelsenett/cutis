@@ -1,41 +1,8 @@
-.storybook-input {
-  display: inline-block;
-  cursor: pointer;
-  border: 0;
-  border-radius: 3em;
-  font-weight: 700;
-  line-height: 1;
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+/*
+ * Cutis-spesifikke tillegg til Designsystemets Textfield.
+ * Grunnstilen (farger, størrelser, fokus, feiltilstand) kommer fra
+ * @digdir/designsystemet-css og Cutis-temaet i src/foundations.
+ */
+.cutis-input {
+  font-family: var(--nhn-font-family-label);
 }
-.storybook-input--primary {
-  background-color: #555ab9;
-  color: white;
-}
-.storybook-input--secondary {
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
-  background-color: transparent;
-  color: #333;
-}
-.storybook-input--red {
-  background-color: red;
-  color: #FFFFFF;
-}
-.storybook-input--medium {
-  padding: 11px 20px;
-  font-size: 14px;
-}
-.storybook-input--large {
-  padding: 12px 24px;
-  font-size: 16px;
-}
-
-.eric {
-  font-size: 100px;
-}
-
-.storybook-input:hover {
-  font-weight: 900;
-}
-
-    
-

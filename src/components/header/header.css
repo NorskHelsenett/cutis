@@ -1,33 +1,71 @@
-.storybook-header {
+/*
+ * NHN-header: mørk grønn bakgrunn med NHN-symbolet.
+ * Bruker kun tokens fra src/foundations (--nhn-* og --ds-*).
+ */
+.cutis-header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 15px 20px;
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  gap: var(--nhn-spacing-05);
+  padding: var(--nhn-spacing-05) var(--nhn-spacing-06);
+  /* Overstyrer bakgrunnen fra data-color-scheme="dark". */
+  background: var(--nhn-color-brand-primary);
+  color: var(--nhn-color-text-heading-inverse);
+  font-family: var(--nhn-font-family-body-m);
 }
 
-.storybook-header svg {
-  display: inline-block;
-  vertical-align: top;
+.cutis-header__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--nhn-spacing-04);
+  color: inherit;
+  text-decoration: none;
+  border-radius: var(--ds-border-radius-sm);
 }
 
-.storybook-header h1 {
-  display: inline-block;
-  vertical-align: top;
-  margin: 6px 0 6px 10px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1;
+.cutis-header__brand:focus-visible {
+  outline: var(--ds-border-width-focus) solid var(--ds-color-focus-outer);
+  outline-offset: var(--ds-border-width-focus);
 }
 
-.storybook-header > div:last-child {
+.cutis-header__logo {
+  width: 3.25rem;
+  height: auto;
+}
+
+.cutis-header__title {
+  font-size: var(--nhn-font-size-heading-s);
+  line-height: var(--nhn-line-height-heading-s);
+  font-weight: var(--nhn-font-weight-heading-s);
+}
+
+.cutis-header__actions {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: var(--nhn-spacing-03);
 }
 
-.storybook-header .welcome {
-  color: #333;
-  font-size: 14px;
+.cutis-header__welcome {
+  font-size: var(--nhn-font-size-body-s);
+  line-height: var(--nhn-line-height-body-s);
+}
+
+/*
+ * Knapper på grønn bakgrunn, etter NHN-profilen:
+ * primær = lys grønn med mørk tekst, sekundær = hvit tekst og kant.
+ */
+.cutis-header .ds-button[data-variant='primary'] {
+  --dsc-button-background: var(--nhn-color-brand-secondary);
+  --dsc-button-background--hover: var(--nhn-color-interactive-raised-hover);
+  --dsc-button-background--active: var(--nhn-color-interactive-raised-pressed);
+  --dsc-button-color: var(--nhn-color-background-dark);
+  --dsc-button-color--hover: var(--nhn-color-background-dark);
+}
+
+.cutis-header .ds-button[data-variant='secondary'] {
+  --dsc-button-color: var(--nhn-color-text-heading-inverse);
+  --dsc-button-border-color: var(--nhn-color-text-heading-inverse);
+  --dsc-button-background--hover: color-mix(in srgb, currentColor 15%, transparent);
+  --dsc-button-background--active: color-mix(in srgb, currentColor 25%, transparent);
 }

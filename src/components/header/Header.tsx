@@ -1,7 +1,9 @@
 /**
- * @file Header component used in Storybook examples and page compositions.
+ * @file NHN header component.
  *
- * Renders a simple application header with login and sign-up actions.
+ * Dark green application header with the NHN symbol, a product title and
+ * login/logout actions. Colors, font and button styles come from the Cutis
+ * theme (Designsystemet + NHN tokens in src/foundations).
  */
 
 import { Button } from '../button/Button';
@@ -12,49 +14,64 @@ type User = {
 };
 
 export interface HeaderProps {
+  /** Product or service name shown next to the NHN symbol */
+  title?: string;
+  /** Logged-in user, if any */
   user?: User;
   onLogin?: () => void;
   onLogout?: () => void;
   onCreateAccount?: () => void;
 }
 
-export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) => (
-  <header>
-    <div className="storybook-header">
-      <div>
-        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-          <g fill="none" fillRule="evenodd">
-            <path
-              d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
-              fill="#FFF"
-            />
-            <path
-              d="M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z"
-              fill="#555AB9"
-            />
-            <path
-              d="M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z"
-              fill="#91BAF8"
-            />
-          </g>
-        </svg>
-        <h1>Acme</h1>
-      </div>
-      <div>
-        {user ? (
-          <>
-            <span className="welcome">
-              Welcome, <b>{user.name}</b>!
-            </span>
-            <Button size="small" onClick={onLogout} label="Log out" />
-          </>
-        ) : (
-          <>
-            <Button size="small" onClick={onLogin} label="Log in" />
-            <Button primary size="small" onClick={onCreateAccount} label="Sign up" />
-          </>
-        )}
-      </div>
+/** NHN-symbolet (hvit), fra public/NHN_Symbol_Hvit.svg */
+const NhnSymbol = () => (
+  <svg
+    className="cutis-header__logo"
+    viewBox="0 0 283.77 166.26"
+    aria-hidden="true"
+    focusable="false"
+  >
+    <path
+      fill="currentColor"
+      d="M271.6,12.17a41.58,41.58,0,0,0-58.79,0L154.65,70.34A41.55,41.55,0,0,0,95.3,12.17L12.17,95.3A41.57,41.57,0,0,0,71,154.09l58.16-58.17a41.55,41.55,0,0,0,59.35,58.17L271.6,71A41.58,41.58,0,0,0,271.6,12.17Z"
+    />
+  </svg>
+);
+
+export const Header = ({
+  title = 'Norsk helsenett',
+  user,
+  onLogin,
+  onLogout,
+  onCreateAccount,
+}: HeaderProps) => (
+  // Mørkt fargeskjema gir lys tekst, kanter og fokusring på den grønne bakgrunnen
+  <header className="cutis-header" data-color-scheme="dark">
+    <a className="cutis-header__brand" href="/">
+      <NhnSymbol />
+      <span className="cutis-header__title">{title}</span>
+    </a>
+
+    <div className="cutis-header__actions">
+      {user ? (
+        <>
+          <span className="cutis-header__welcome">
+            Velkommen, <b>{user.name}</b>!
+          </span>
+          <Button size="small" color="neutral" onClick={onLogout} label="Logg ut" />
+        </>
+      ) : (
+        <>
+          <Button size="small" color="neutral" onClick={onLogin} label="Logg inn" />
+          <Button
+            primary
+            size="small"
+            color="brand1"
+            onClick={onCreateAccount}
+            label="Opprett konto"
+          />
+        </>
+      )}
     </div>
   </header>
 );
