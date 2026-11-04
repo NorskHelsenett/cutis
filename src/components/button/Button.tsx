@@ -1,10 +1,15 @@
 /**
  * @file Reusable button component for the Cutis design system.
  *
- * Exposes a simple, Storybook-friendly button with primary and size variants.
+ * Thin wrapper around Designsystemet's Button (@digdir/designsystemet-react),
+ * styled through the Cutis theme in src/foundations. Keeps the original
+ * Cutis props (`primary`, `size`, `label`) so existing usage keeps working.
  */
 
+import { Button as DsButton } from '@digdir/designsystemet-react';
 import './button.css';
+
+const sizeMap = { small: 'sm', medium: 'md', large: 'lg' } as const;
 
 export interface ButtonProps {
   /** Is this the principal call to action on the page? */
@@ -27,15 +32,17 @@ export const Button = ({
   label,
   ...props
 }: ButtonProps) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
-    <button
+    <DsButton
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-      style={{ backgroundColor }}
+      className="cutis-button"
+      variant={primary ? 'primary' : 'secondary'}
+      data-size={sizeMap[size]}
+      data-color="accent"
+      style={backgroundColor ? { backgroundColor } : undefined}
       {...props}
     >
       {label}
-    </button>
+    </DsButton>
   );
 };

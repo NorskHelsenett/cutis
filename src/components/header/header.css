@@ -21,12 +21,13 @@
   line-height: 1;
 }
 
-.storybook-header button + button {
-  margin-left: 10px;
+.storybook-header > div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .storybook-header .welcome {
-  margin-right: 10px;
   color: #333;
   font-size: 14px;
 }

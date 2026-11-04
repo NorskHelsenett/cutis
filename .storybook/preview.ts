@@ -7,6 +7,9 @@
 import type { Preview } from '@storybook/react-vite'
 import managerTheme from './theme/manager-theme';
 
+// NHN-tokens + Designsystemet (komponent-CSS og Cutis-tema)
+import '../src/foundations/index.css';
+
 const preview: Preview = {
   parameters: {
     docs: { theme: managerTheme },

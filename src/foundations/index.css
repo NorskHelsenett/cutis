@@ -7,6 +7,11 @@
  * before the semantic tokens that reference them via var().
  */
 
+/* Designsystemet (designsystemet.no) — komponent-CSS og generert Cutis-tema.
+ * Ligger i @layer ds.*, så NHN-reglene under vinner ved konflikt. */
+@import "@digdir/designsystemet-css";
+@import "./designsystemet/css/cutis.css";
+
 /* Primitive layer — raw values from Brandpad/Figma. Not for direct use in components. */
 @import "./primitive/palette.css";
 @import "./primitive/spacing.css";
@@ -21,3 +26,6 @@
 @import "./semantic/border.css";
 @import "./semantic/typography/mobile.css";
 @import "./semantic/typography/desktop.css";
+
+/* Bro: NHN-verdier som skal overstyre Designsystemet. */
+@import "./designsystemet.css";

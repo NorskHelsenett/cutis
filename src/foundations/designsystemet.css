@@ -1,0 +1,38 @@
+/**
+ * Bro mellom NHN-tokens og Designsystemet (designsystemet.no).
+ *
+ * Designsystemet-komponentene (@digdir/designsystemet-react/-css) leser
+ * `--ds-*`-variabler. Disse genereres fra designsystemet.config.jsonc til
+ * ./designsystemet/css/cutis.css (`npm run tokens`), med NHN-fargene som
+ * utgangspunkt.
+ *
+ * Her overstyrer vi de få `--ds-*`/`--dsc-*`-verdiene der NHN har en
+ * eksplisitt verdi som bør vinne over det Designsystemet regner ut.
+ * Designsystemet legger alt sitt i `@layer ds.*`, så disse regler uten
+ * lag vinner alltid, uavhengig av rekkefølge.
+ *
+ * Fargeskalaene overstyres IKKE her: Designsystemet regner ut kontrast-
+ * sikre steg (og mørk modus) fra basisfargene i config-filen. Bruk
+ * `overrides` i config-filen hvis en enkelt farge må justeres.
+ *
+ * Requires primitive/ and semantic/ to be loaded first.
+ */
+
+:root {
+  /* NHN-fonten med fallback (CLI-en støtter kun ett navn). */
+  --ds-font-family: var(--nhn-font-family-body-m);
+}
+
+[data-typography] {
+  --ds-font-family: var(--nhn-font-family-body-m);
+}
+
+/* NHN-knapper er "piller" (--nhn-radius = 50px). */
+.ds-button {
+  --dsc-button-border-radius: var(--nhn-radius);
+}
+
+/* Designsystemet setter ikke font på body selv — det er opp til konsumenten. */
+body {
+  font-family: var(--ds-font-family);
+}

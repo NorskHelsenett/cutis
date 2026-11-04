@@ -1,0 +1,41 @@
+{
+  // Konfigurasjon for Designsystemet-CLI (@digdir/designsystemet).
+  //
+  // Fargene her er hentet fra NHN-primitivene i src/foundations/primitive/palette.css.
+  // Endrer dere en farge der, må den også endres her, og deretter kjøres:
+  //   npm run tokens
+  //
+  // Se https://theme.designsystemet.no/ for en visuell temabygger.
+  "$schema": "./node_modules/@digdir/designsystemet/dist/config.schema.json",
+  "outDir": "./src/foundations/designsystemet/design-tokens",
+  "clean": true,
+  "themes": {
+    "cutis": {
+      "colors": {
+        // --nhn-primitive-color-primary-dark-green
+        "accent": "#015945",
+        // --nhn-primitive-color-primary-light-green
+        "brand1": "#7BEFB2",
+        // --nhn-primitive-color-cutis-regular
+        "brand2": "#FFBBC4",
+        // --nhn-primitive-color-green1-1
+        "neutral": "#002920"
+      },
+      "typography": {
+        // --nhn-primitive-font-family-default
+        "fontFamily": "Arial"
+      },
+      // Basisradius i px. Designsystemet skalerer denne til sm/md/lg/full.
+      "borderRadius": 8,
+      "overrides": {
+        "severity": {
+          // --nhn-primitive-color-extended-*
+          "info": "#3E79B7",
+          "success": "#4A9F55",
+          "warning": "#F2B24D",
+          "danger": "#C93A36"
+        }
+      }
+    }
+  }
+}
