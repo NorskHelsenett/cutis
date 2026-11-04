@@ -1,0 +1,49 @@
+/**
+ * NHN semantic typography tokens — desktop overrides.
+ *
+ * Overrides the mobile-first values from ./mobile.css once the viewport is
+ * at least 768px wide. Same variable names, so any component using
+ * `var(--nhn-font-size-body-m)` etc. automatically picks up the right value
+ * for the current viewport — see mobile.css's header comment for details.
+ *
+ * The 768px breakpoint is pre-defined and can be adjusted.
+ *
+ * Requires primitive/typography/desktop.css and
+ * primitive/typography/defaults.css to be loaded first, plus
+ * semantic/typography/mobile.css for the base values.
+ *
+ * @see ../../primitive/typography/desktop.css
+ * @see ../../primitive/typography/defaults.css
+ * @see ./mobile.css
+ */
+
+@media (min-width: 768px) {
+  :root {
+    --nhn-font-size-heading-xl:   var(--nhn-primitive-font-size-desktop-heading-xl);
+    --nhn-line-height-heading-xl: var(--nhn-primitive-line-height-desktop-heading-xl);
+
+    --nhn-font-size-heading-l:    var(--nhn-primitive-font-size-desktop-heading-l);
+    --nhn-line-height-heading-l:  var(--nhn-primitive-line-height-desktop-heading-l);
+
+    --nhn-font-size-heading-m:    var(--nhn-primitive-font-size-desktop-heading-m);
+    --nhn-line-height-heading-m:  var(--nhn-primitive-line-height-desktop-heading-m);
+
+    --nhn-font-size-heading-s:    var(--nhn-primitive-font-size-desktop-heading-s);
+    --nhn-line-height-heading-s:  var(--nhn-primitive-line-height-desktop-heading-s);
+
+    --nhn-font-size-body-l:       var(--nhn-primitive-font-size-desktop-body-l);
+    --nhn-line-height-body-l:     var(--nhn-primitive-line-height-desktop-body-l);
+
+    --nhn-font-size-body-m:       var(--nhn-primitive-font-size-desktop-body-m);
+    --nhn-line-height-body-m:     var(--nhn-primitive-line-height-desktop-body-m);
+
+    --nhn-font-size-body-s:       var(--nhn-primitive-font-size-desktop-body-s);
+    --nhn-line-height-body-s:     var(--nhn-primitive-line-height-desktop-body-s);
+
+    --nhn-font-size-caption:      var(--nhn-primitive-font-size-desktop-caption);
+    --nhn-line-height-caption:    var(--nhn-primitive-line-height-desktop-caption);
+
+    --nhn-font-size-label:        var(--nhn-primitive-font-size-desktop-label);
+    --nhn-line-height-label:      var(--nhn-primitive-line-height-desktop-label);
+  }
+}

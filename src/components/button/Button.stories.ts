@@ -48,13 +48,8 @@ export const Secondary: Story = {
 export const Large: Story = {
   args: {
     primary: true,
-<<<<<<< HEAD
-    size: "large",
-    label: "Button",
-=======
     size: 'large',
     label: 'Button',
->>>>>>> 7f4bd0f8868dcf52d0c0e6b4ff4b8e2bfc58a50a
   },
 };
 

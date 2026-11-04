@@ -1,0 +1,20 @@
+/**
+ * NHN brandpad border tokens.
+ *
+ * Raw border values (e.g. width, radius) transferred directly from the
+ * Brandpad/Figma source of truth. These values should not be edited
+ * manually — any changes must originate from Brandpad and be re-transferred
+ * here to stay in sync with the design source.
+ *
+ * Do not reference this variable directly in components — use the
+ * semantic border token (semantic/border.css) instead.
+ *
+ * NOTE: the original TS source (`export const radius = 50;`) had no unit.
+ * Assumed px here — change to `50%` (or whatever's correct) if that's wrong.
+ *
+ * @see https://brandpad.io/norsk-helsenett/
+ */
+
+:root {
+  --nhn-primitive-radius: 50px;
+}

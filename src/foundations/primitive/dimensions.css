@@ -1,0 +1,24 @@
+/**
+ * NHN brandpad border tokens.
+ *
+ * Raw border values (e.g. width, radius) transferred directly from the
+ * Brandpad/Figma source of truth. These values should not be edited
+ * manually — any changes must originate from Brandpad and be re-transferred
+ * here to stay in sync with the design source.
+ *
+ * Do not reference this variable directly in components — use the
+ * semantic border token (semantic/border.css) instead.
+ *
+ * @see https://brandpad.io/norsk-helsenett/
+ */
+
+:root {
+  /* Radius */
+  --nhn-primitive-radius: 50px;
+
+  /* Height */
+  --nhn-primitive-height: 45px;
+
+  /* Gap */
+  --nhn-primitive-gap:    5px;
+}

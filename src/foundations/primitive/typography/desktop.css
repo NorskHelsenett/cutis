@@ -1,0 +1,40 @@
+/**
+ * NHN brandpad typography tokens for desktop.
+ *
+ * Raw typography values for font size and line height transferred directly
+ * from the Brandpad/Figma source of truth.
+ *
+ * These values should not be edited manually — any changes must originate
+ * from Brandpad and be re-transferred here to stay in sync with the design
+ * source.
+ *
+ * Namespaced with `-desktop-` (rather than plain :root overrides) so this
+ * file can be loaded alongside typography/mobile.css without either one
+ * clobbering the other. The semantic typography layer is what decides,
+ * via media query, which of these gets exposed as the token components
+ * actually consume.
+ *
+ * @see https://brandpad.io/norsk-helsenett/
+ */
+
+:root {
+  --nhn-primitive-font-size-desktop-heading-xl:   2.5rem;
+  --nhn-primitive-font-size-desktop-heading-l:    2rem;
+  --nhn-primitive-font-size-desktop-heading-m:    1.5rem;
+  --nhn-primitive-font-size-desktop-heading-s:    1.25rem;
+  --nhn-primitive-font-size-desktop-body-l:       1.125rem;
+  --nhn-primitive-font-size-desktop-body-m:       1rem;
+  --nhn-primitive-font-size-desktop-body-s:       0.875rem;
+  --nhn-primitive-font-size-desktop-caption:      0.875rem;
+  --nhn-primitive-font-size-desktop-label:        1rem;
+
+  --nhn-primitive-line-height-desktop-heading-xl: 3rem;
+  --nhn-primitive-line-height-desktop-heading-l:  2.5rem;
+  --nhn-primitive-line-height-desktop-heading-m:  2rem;
+  --nhn-primitive-line-height-desktop-heading-s:  1.75rem;
+  --nhn-primitive-line-height-desktop-body-l:     1.75rem;
+  --nhn-primitive-line-height-desktop-body-m:     1.5rem;
+  --nhn-primitive-line-height-desktop-body-s:     1.25rem;
+  --nhn-primitive-line-height-desktop-caption:    1.25rem;
+  --nhn-primitive-line-height-desktop-label:      1.5rem;
+}

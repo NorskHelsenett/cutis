@@ -1,0 +1,75 @@
+/**
+ * NHN semantic typography tokens — mobile-first base.
+ *
+ * Maps design intent (heading_xl, body_m, label, etc.) to primitive
+ * typography values. Components should reference these tokens rather than
+ * the primitive typography values directly.
+ *
+ * This file sets the mobile values unconditionally at :root, acting as the
+ * base/default. desktop.css then overrides these same variable names inside
+ * a `@media (min-width: 768px)` query, so importing both files gives you
+ * responsive typography for free — no JS/build-time branching needed.
+ *
+ * Requires primitive/typography/mobile.css and
+ * primitive/typography/defaults.css to be loaded first.
+ *
+ * @see ../../primitive/typography/mobile.css
+ * @see ../../primitive/typography/defaults.css
+ * @see ./desktop.css
+ */
+
+:root {
+  /* Used once per page as the main heading */
+  --nhn-font-size-heading-xl:   var(--nhn-primitive-font-size-mobile-heading-xl);
+  --nhn-line-height-heading-xl: var(--nhn-primitive-line-height-mobile-heading-xl);
+  --nhn-font-family-heading-xl: var(--nhn-primitive-font-family-default);
+  --nhn-font-weight-heading-xl: var(--nhn-primitive-font-weight-bold);
+
+  /* Used for section headings */
+  --nhn-font-size-heading-l:    var(--nhn-primitive-font-size-mobile-heading-l);
+  --nhn-line-height-heading-l:  var(--nhn-primitive-line-height-mobile-heading-l);
+  --nhn-font-family-heading-l:  var(--nhn-primitive-font-family-default);
+  --nhn-font-weight-heading-l:  var(--nhn-primitive-font-weight-bold);
+
+  /* Used for subsections and short titles */
+  --nhn-font-size-heading-m:    var(--nhn-primitive-font-size-mobile-heading-m);
+  --nhn-line-height-heading-m:  var(--nhn-primitive-line-height-mobile-heading-m);
+  --nhn-font-family-heading-m:  var(--nhn-primitive-font-family-default);
+  --nhn-font-weight-heading-m:  var(--nhn-primitive-font-weight-bold);
+
+  /* Used for smaller sections or panel headings */
+  --nhn-font-size-heading-s:    var(--nhn-primitive-font-size-mobile-heading-s);
+  --nhn-line-height-heading-s:  var(--nhn-primitive-line-height-mobile-heading-s);
+  --nhn-font-family-heading-s:  var(--nhn-primitive-font-family-default);
+  --nhn-font-weight-heading-s:  var(--nhn-primitive-font-weight-bold);
+
+  /* Introductory text or longer descriptions */
+  --nhn-font-size-body-l:       var(--nhn-primitive-font-size-mobile-body-l);
+  --nhn-line-height-body-l:     var(--nhn-primitive-line-height-mobile-body-l);
+  --nhn-font-family-body-l:     var(--nhn-primitive-font-family-default);
+  --nhn-font-weight-body-l:     var(--nhn-primitive-font-weight-regular);
+
+  /* Default body text in the interface */
+  --nhn-font-size-body-m:       var(--nhn-primitive-font-size-mobile-body-m);
+  --nhn-line-height-body-m:     var(--nhn-primitive-line-height-mobile-body-m);
+  --nhn-font-family-body-m:     var(--nhn-primitive-font-family-default);
+  --nhn-font-weight-body-m:     var(--nhn-primitive-font-weight-regular);
+
+  /* Help texts and secondary information */
+  --nhn-font-size-body-s:       var(--nhn-primitive-font-size-mobile-body-s);
+  --nhn-line-height-body-s:     var(--nhn-primitive-line-height-mobile-body-s);
+  --nhn-font-family-body-s:     var(--nhn-primitive-font-family-default);
+  --nhn-font-weight-body-s:     var(--nhn-primitive-font-weight-regular);
+
+  /* Metadata, captions, and other low-priority information */
+  --nhn-font-size-caption:      var(--nhn-primitive-font-size-mobile-caption);
+  --nhn-line-height-caption:    var(--nhn-primitive-line-height-mobile-caption);
+  --nhn-font-family-caption:    var(--nhn-primitive-font-family-default);
+  --nhn-font-weight-caption:    var(--nhn-primitive-font-weight-regular);
+
+  /* Form fields, buttons, and labels */
+  --nhn-font-size-label:        var(--nhn-primitive-font-size-mobile-label);
+  --nhn-line-height-label:      var(--nhn-primitive-line-height-mobile-label);
+  --nhn-font-family-label:      var(--nhn-primitive-font-family-default);
+  --nhn-font-weight-label:      var(--nhn-primitive-font-weight-regular);
+}

@@ -1,0 +1,28 @@
+/**
+ * NHN brandpad spacing scale.
+ *
+ * Raw spacing values transferred directly from the Brandpad/Figma source of
+ * truth. These values should not be edited manually — any changes must
+ * originate from Brandpad and be re-transferred here to stay in sync with
+ * the design source.
+ *
+ * Do not reference these variables directly in components — use the
+ * semantic spacing tokens (semantic/spacing.css) instead.
+ *
+ * @see https://brandpad.io/norsk-helsenett/
+ */
+
+:root {
+  --nhn-primitive-spacing-01: 0.125rem; /* 2px */
+  --nhn-primitive-spacing-02: 0.25rem;  /* 4px */
+  --nhn-primitive-spacing-03: 0.5rem;   /* 8px */
+  --nhn-primitive-spacing-04: 0.75rem;  /* 12px */
+  --nhn-primitive-spacing-05: 1rem;     /* 16px */
+  --nhn-primitive-spacing-06: 1.5rem;   /* 24px */
+  --nhn-primitive-spacing-07: 2rem;     /* 32px */
+  --nhn-primitive-spacing-08: 2.5rem;   /* 40px */
+  --nhn-primitive-spacing-09: 3rem;     /* 48px */
+  --nhn-primitive-spacing-10: 4rem;     /* 64px */
+  --nhn-primitive-spacing-11: 5rem;     /* 80px */
+  --nhn-primitive-spacing-12: 6rem;     /* 96px */
+}

@@ -1,0 +1,37 @@
+/**
+ * NHN brandpad typography tokens for mobile.
+ *
+ * Raw typography values for font size and line height transferred directly
+ * from the Brandpad/Figma source of truth.
+ *
+ * These values should not be edited manually — any changes must originate
+ * from Brandpad and be re-transferred here to stay in sync with the design
+ * source.
+ *
+ * Namespaced with `-mobile-` for the same reason as typography/desktop.css
+ * — see that file's header comment.
+ *
+ * @see https://brandpad.io/norsk-helsenett/
+ */
+
+:root {
+  --nhn-primitive-font-size-mobile-heading-xl:   1.75rem;
+  --nhn-primitive-font-size-mobile-heading-l:    1.5rem;
+  --nhn-primitive-font-size-mobile-heading-m:    1.25rem;
+  --nhn-primitive-font-size-mobile-heading-s:    1.125rem;
+  --nhn-primitive-font-size-mobile-body-l:       1.125rem;
+  --nhn-primitive-font-size-mobile-body-m:       1rem;
+  --nhn-primitive-font-size-mobile-body-s:       1rem;
+  --nhn-primitive-font-size-mobile-caption:      0.875rem;
+  --nhn-primitive-font-size-mobile-label:        0.875rem;
+
+  --nhn-primitive-line-height-mobile-heading-xl: 2.25rem;
+  --nhn-primitive-line-height-mobile-heading-l:  2rem;
+  --nhn-primitive-line-height-mobile-heading-m:  1.75rem;
+  --nhn-primitive-line-height-mobile-heading-s:  1.5rem;
+  --nhn-primitive-line-height-mobile-body-l:     1.75rem;
+  --nhn-primitive-line-height-mobile-body-m:     1.5rem;
+  --nhn-primitive-line-height-mobile-body-s:     1.25rem;
+  --nhn-primitive-line-height-mobile-caption:    1.25rem;
+  --nhn-primitive-line-height-mobile-label:      1.5rem;
+}
